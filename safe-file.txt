@@ -1,0 +1,2 @@
+# Безпечний файл без секретів
+CONFIG_ENV=development
