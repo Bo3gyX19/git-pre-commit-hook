@@ -5,15 +5,15 @@
 ## Швидке встановлення (curl pipe sh)
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/Bo3gyX19/DevOpsPractice25/main/week8/install-gitleaks-hook.sh | bash
+curl -fsSL https://raw.githubusercontent.com/Bo3gyX19/git-pre-commit-hook/main/install-gitleaks-hook.sh | bash
 ```
 
 ## Ручне встановлення
 
 1. Клонуйте репозиторій або завантажте файли:
 ```bash
-git clone https://github.com/Bo3gyX19/DevOpsPractice25.git
-cd DevOpsPractice25/week8
+git clone https://github.com/Bo3gyX19/git-pre-commit-hook.git
+cd git-pre-commit-hook
 ```
 
 2. Зробіть скрипт виконуваним та запустіть:
