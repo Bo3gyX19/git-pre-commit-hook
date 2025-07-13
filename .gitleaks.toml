@@ -1,0 +1,19 @@
+# Gitleaks configuration file
+
+[extend]
+# useDefault will extend the base configuration with the default gitleaks config:
+# https://github.com/gitleaks/gitleaks/blob/master/config/gitleaks.toml
+useDefault = true
+
+# Додаткові правила для виявлення українських секретів
+[[rules]]
+id = "telegram-bot-token"
+description = "Telegram Bot Token"
+regex = '''[0-9]{8,10}:[a-zA-Z0-9_-]{35}'''
+tags = ["telegram", "bot", "token"]
+
+[[rules]]
+id = "ukrainian-api-key"
+description = "Generic Ukrainian API Key"
+regex = '''(?i)(api[_-]?key|apikey)['":\s]*[=:]\s*['"][a-zA-Z0-9_-]{20,}['"]'''
+tags = ["api", "key"]

@@ -1,0 +1,8 @@
+# Gitleaks ignore patterns
+# Використовуйте цей файл для ігнорування false positive результатів
+
+# Приклади:
+# secrets.example.txt:generic-api-key:1
+# README.md:telegram-bot-token:15
+demo.sh:generic-api-key:98
+test-secrets.example:generic-api-key:16
